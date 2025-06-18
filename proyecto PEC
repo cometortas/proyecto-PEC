@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad Escolar CBTis 118</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Comunidad Escolar CBTis 118</h1>
+    <p>Cuidando nuestro planeta de la contaminacion.</p>
+</header>
+
+<nav>
+    <a href="#" onclick="openTab('tab1')">Introducción</a>
+    <a href="#" onclick="openTab('tab2')">PROMUEVE PROGRAMAS DE SALUD MATERNA INFANTIL Y CONTROL DEL NIÑO SANO y ATIENDE LAS NECESIDADES BÁSICAS DEL NIÑO</a>
+    <a href="#" onclick="openTab('tab3')">Ciencias sociales</a>
+    <a href="#" onclick="openTab('tab4')">La conservacion de la energia</a>
+    <a href="#" onclick="openTab('tab5')">Lengua y comunicacion</a>
+</nav>
+
+<div id="tab1" class="tab-content">
+    <h2>Introducción</h2>
+    <p>La comunidad escolar del CBTis 118 fomenta en la comunidad cercana al plantel la conciencia y la práctica sobre la separación de residuos sólidos a partir de la difusión, práctica y desarrollo de hábitos que concientizen el consumo y el desperdicio de residuos solidos.</p>
+        <li><strong>Informar sobre el pañal desechable:</strong> Brindar informacion acerca de la cantidad de contaminacion producida por el pañal desechable.</li>
+        <li><strong>Video informativo acerca del PEC:<strong>Concientizar a la comunidad acerca del impacto ambiental que produce la tira de plasticos.</li>
+        <li><strong>Experimento de plastico alternativo:</strong> Mostrar la elaboracion de un plastico alternativo hecho a base de leche .</li>
+        <li><strong>Reseña acerca de la elaboracion de los proyectos del PEC:</strong> Se muestra una critica basada en la elaboracion de los diversos proyectos del PEC.</li>
+</div>
+
+<div id="tab2" class="tab-content">
+    <h2>PROMUEVE PROGRAMAS DE SALUD MATERNA INFANTIL Y CONTROL DEL NIÑO SANO y ATIENDE LAS NECESIDADES BÁSICAS DEL NIÑO</h2>
+    <ol>
+<li><strong> Selaboraron diversas entrevistas acerca de la contaminacion que produce el pañal desechable en el medio ambiente, donde dio como resultado que mas del 70% de los padres de familia no tenian nocion acerca de la contaminacion que producian al usar estos mismos.</li>
+    </ol>
+</div>
+
+<div id="tab3" class="tab-content">
+    <h2>Ciencias sociales</h2>
+    <p><strong>concientizacion:</strong></p>
+    <ul>
+        <li>Se elaboro una pagina web en equipo donde el enfoque que se busco fue el de informar a la communidad acerca de la cantidad de contaminacion producida por la gente con sus plasticos a diario.</li>
+        
+    </ul>
+</div>
+
+<div id="tab4" class="tab-content">
+    <h2>La conservacion de la energia</h2>
+    <ul>
+        <li><strong>Se llevo a cabo un experimento donde se elaboro un plastico alternativo hecho a base de leche entera y vinagre, dando fuente a un plastico facil de elaborar poco contaminante y renovable</li>
+        
+    </ul>
+</div>
+
+<div id="tab5" class="tab-content">
+    <h2>Lengua y comunicacion</h2>
+    <p>Se elaboro una critica constructiva acerca de la elaboracion de el resto de proyectos relacionados con el PEC.</p>
+</div>
+
+<script>
+    function openTab(tabId) {
+        // Ocultar todas las pestañas
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        // Mostrar la pestaña seleccionada
+        const activeTab = document.getElementById(tabId);
+        activeTab.classList.add('active');
+    }
+
+    // Mostrar la pestaña de introducción por defecto
+    openTab('tab1');
+</script>
+
+</body>
+</html>
